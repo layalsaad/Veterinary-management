@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication.navController">
+    <children>
+        <HBox layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView id="logo" fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                </ImageView>
+                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="60.0" HBox.hgrow="ALWAYS" />
+                <Button id="gotoHome" alignment="CENTER" mnemonicParsing="false" onAction="#gotoHome" style="-fx-background-color: transparent; -fx-border-color: #284b9e; -fx-border-width: 0 2 2 0;" text="HOME" textAlignment="CENTER" textFill="#284b9e" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button id="gotoAbout" alignment="CENTER" mnemonicParsing="false" onAction="#gotoAbout" style="-fx-background-color: transparent; -fx-border-color: #e5540b; -fx-border-width: 0 2 2 0;" text="ABOUT" textAlignment="CENTER" textFill="#e5540b" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button id="gotoContact" alignment="CENTER" mnemonicParsing="false" onAction="#gotoContact" style="-fx-background-color: transparent; -fx-border-color: #055b2b; -fx-border-width: 0 2 2 0;" text="CONTACT" textAlignment="CENTER" textFill="#055b2b" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox fillHeight="false" layoutX="20.0" layoutY="283.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="571.0" style="-fx-background-image:url('file:img/@background.png')">
+            <children>
+                <ImageView fitHeight="368.0" fitWidth="572.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/background.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D height="380.0" width="600.0" />
+                    </viewport>
+                </ImageView>
+            </children>
+        </HBox>
+        <Button id="gotoAppointment" alignment="CENTER" contentDisplay="CENTER" layoutX="397.0" layoutY="731.0" mnemonicParsing="false" onAction="#gotoAppointment" style="-fx-background-color: #122864;" text="Book Appointment" textFill="WHITE" wrapText="true" />
+        <Label layoutX="141.0" layoutY="163.0" text="Welcome to our clinics">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication.navController">
+    <children>
+        <HBox layoutX="27.0" layoutY="14.0" prefHeight="122.0" prefWidth="547.0" spacing="20.0" style="-fx-background-color: WHITE;">
+            <children>
+                <ImageView id="logo" fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                </ImageView>
+                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="60.0" HBox.hgrow="ALWAYS" />
+                <Button id="gotoHome" alignment="CENTER" mnemonicParsing="false" onAction="#gotoHome" style="-fx-background-color: transparent; -fx-border-color: #284b9e; -fx-border-width: 0 2 2 0;" text="HOME" textAlignment="CENTER" textFill="#284b9e" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button id="gotoAbout" alignment="CENTER" mnemonicParsing="false" onAction="#gotoAbout" style="-fx-background-color: transparent; -fx-border-color: #e5540b; -fx-border-width: 0 2 2 0;" text="ABOUT" textAlignment="CENTER" textFill="#e5540b" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+                <Button id="gotoContact" alignment="CENTER" mnemonicParsing="false" onAction="#gotoContact" style="-fx-background-color: transparent; -fx-border-color: #055b2b; -fx-border-width: 0 2 2 0;" text="CONTACT" textAlignment="CENTER" textFill="#055b2b" HBox.hgrow="ALWAYS">
+                    <opaqueInsets>
+                        <Insets bottom="60.0" right="60.0" />
+                    </opaqueInsets>
+                    <HBox.margin>
+                        <Insets top="50.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="136.0" prefHeight="655.0" prefWidth="565.0">
+            <children>
+                <ImageView fitHeight="60.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                    <image>
+                        <Image url="@../img/header.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport>
+                </ImageView>
+                <Label id="pane" alignment="CENTER" prefHeight="95.0" prefWidth="565.0" text="CONTACT US ON" textFill="#298af2">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </Label>
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: BLACK;">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/phone.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="CENTER" contentDisplay="CENTER" text="01 555 555" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="40.0" top="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="171.0" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: BLACK;">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/email.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="CENTER" contentDisplay="CENTER" text="petclinic@gmail.com" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="40.0" top="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="371.0" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: BLACK;">
+                            <children>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/address.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="CENTER" contentDisplay="CENTER" text="Beirut - Hamra Street - Open from 8:00 AM till 3:00 PM" textFill="WHITE">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="40.0" top="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>
